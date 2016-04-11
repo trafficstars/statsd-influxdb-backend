@@ -1,8 +1,3 @@
-NOTE
------
-Fork from https://github.com/bernd/statsd-influxdb-backend to make it working with tags ([PR 29](https://github.com/bernd/statsd-influxdb-backend/pull/29)).
-
-
 StatsD InfluxDB backend
 -----------------------
 
@@ -13,6 +8,8 @@ A naive [InfluxDB](http://influxdb.org/) backend for
 
 It can ship events to InfluxDB using two different strategies which can be
 used at the same time.
+
+Plugin supports tags with influexDB protocol (https://github.com/bernd/statsd-influxdb-backend/pull/29) ex. `my.cool.metric,server=node1`
 
 ### Regular Flush Strategy
 
